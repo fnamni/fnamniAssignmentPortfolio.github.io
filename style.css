@@ -1,0 +1,238 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Nov 30, 2023, 10:55:37 AM
+    Author     : ADMIN
+*/
+body{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*header css*/
+header, nav{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+nav a:hover{
+    color: #ffcc00;
+}
+section{
+    margin: 2em;
+}
+h2{
+    color: #333;
+}
+
+/*index css*/
+#contentHome{
+    background-color: #f0f0f0;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerHome{
+    text-align: center;
+}
+h5, p{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-weight: bold;
+}
+
+/*about css*/
+.about-container{
+    display: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.image-container{
+    width: 40%;/*adjust*/
+}
+.image-container img{
+    max-width: 70%;/*adjust*/
+    height: auto;
+    border: 5px solid #333;
+    border-radius: 8px;
+}
+text-container{
+   width: 55%;/*adjust*/
+   margin-left: 15px;/*adjust*/
+}
+.text-container p{
+    text-align: justify;
+}
+.text-container li{
+    font-weight: bold;
+    text-align: justify;
+}
+
+/*project css*/
+#project{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.project-box{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: left;
+    width: 250px;
+}
+.project-box img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.project-box h3{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.project-box p{
+    margin-top: 5px;
+    font-size: 14px;
+}
+.project-box a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 50%;
+}
+.project-box a i{
+    font-size: 1em;
+    color: #f4f4f4;
+    opacity: 0.9;
+}
+
+/*contact css*/
+.contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.info-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info-item i{
+    margin-right: 10px;
+}
+.info-item p{
+    font-weight: bold;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+button{
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
+
+/*footer css*/
+footer{
+    background-color: #f4f4f4;
+}
+.footer-container{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+   display: flex;
+   justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #333;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: #f4f4f4;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #f4f4f4;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color:#333;
+    transition: 0.5s;
+}
+.footerBottom{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: #333300;
+}
+
+/*mobile devices*/
+@media only screen and (min-width: 768){
+    .about-container{
+        flex-direction: column;
+    }
+    .image-container, text-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .image-container img{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .project-box{
+        width: 100%;
+    }
+    form{
+        grid-template-columns: flex;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer-container{
+        padding: 30px;
+    }
+    .socialIcons{
+        text-align: center;
+        margin-top: 20px;
+    }
+}
